@@ -4,7 +4,6 @@ stemmer = SnowballStemmer(language='english')
 import pickle
 import pandas as pd
 import numpy as np
-import tensorflow as tf
 import string
 
 data = pickle.load(open( "chatbot-data.pkl", "rb" ))
@@ -14,9 +13,6 @@ classes = data['classes']
 import json
 data_set = open('content.json')
 json_data = json.load(data_set)
-
-global graph
-graph = tf.compat.v1.get_default_graph()
 
 with open(f'chatbot.pkl', 'rb') as f:
     model = pickle.load(f)
@@ -41,7 +37,7 @@ def predict(sentence):
     ERROR_THRESHOLD = 0.25
     input_data = pd.DataFrame([get_bag(sentence, words)], dtype=float, index=['input'])
     results = model.predict([input_data])[0]
-    results = [[i,r] for i,r in enumerate(results) if r>ERROR_THRESsHOLD]
+    results = [[i,r] for i,r in enumerate(results) if r>ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     for r in results:
