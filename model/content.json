@@ -1,0 +1,167 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Hey you",
+        "Hey, how are you doing"
+      ],
+      "responses": [
+        "Hello, thanks for asking",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered"
+      ],
+      "responses": [
+        "I can tell you about our services, tell you the available time slots for a demo and guide you through your appointment booking for the demo",
+        "I can show you the services we provide, let you know about the available time slots for a demo and help you book your appointment for the demo",
+        "You can ask me about our services and about the available time slots for demo. I can also help you book a demo"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "what services do you provide?",
+        "how can you help my company",
+        "what can I expect from you",
+        "give me a list of your services"
+      ],
+      "responses": [
+        "We provide website design and development, software development, data analytics and content management services",
+        "We can help you with content management, data analytics and, web design and development"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "web_dev",
+      "patterns": [
+        "Tell me more about the web dev",
+        "I want to know about website design",
+        "Give me info of website development",
+        "I want a website"
+      ],
+      "responses": [
+        "We have a great team of web designers and developers that can build you your dream website with the latest technologies. If you want you can request a demo with us",
+        "Our great team of developers and designers can build you your dream website. Request a demo with us and we will tell you all about it"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "data_analytics",
+      "patterns": [
+        "I want to know about data analytics",
+        "Tell me more about data analytic services",
+        "What data analytics services do you have?"
+      ],
+      "responses": [
+        "We can setup data analytics for all your platforms including web or your internal team softwares to collect useful information to improve your products form your users and your teams"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "content_management",
+      "patterns": [
+        "I want to know about content management",
+        "Tell me about your content management services",
+        "how can you help me with content management",
+        "what CM services you have"
+      ],
+      "responses": [
+        "We can help you with collection, delivery, retrieval, governance and overall management of information/content in any format throughout all your platforms"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "book_demo",
+      "patterns": [
+        "How can I get a demo",
+        "i want to book a demo",
+        "I want an appointment for the demo"
+      ],
+      "responses": [
+        "Sure, I will guide you through the process. Please mention which service(s) you want the demo for",
+        "Great. Let me guide you through the process. Please let know which service(s) you want the demo for"
+      ],
+      "context": ["book_demo"]
+    },
+    {
+      "tag": "time_slots_booking",
+      "patterns": [
+        "What are the available time slots for the demo",
+        "When can you provide the demo",
+        "What time can you provide the demo",
+        "When is the demo available"
+      ],
+      "responses": [
+        "Following are the list of available time slots for the demo. If the time slots are not convenient for you. Drop us an email and we will work something out for you"
+      ],
+      "context": ["list_demo_time_slots"]
+    },
+    {
+      "tag": "demo_info",
+      "patterns": [
+        "What will the demo be like",
+        "What will the contents of the the demo be",
+        "what is in the demo"
+      ],
+      "responses": [
+        "Depending on which services you want a demo for, we will give you a preview of our previous work on the field, tell you about the great team and the latest technology we use, and try to give you a slight preview of what you can expect from us"
+      ],
+      "context": [""]
+    }
+  ]
+}
